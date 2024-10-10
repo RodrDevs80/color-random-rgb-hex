@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+.botones {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+}
+.botones > button {
+  padding: 10px 12px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: green;
+}
+.botones > button:hover {
+  color: green;
+  background-color: #fff;
+  border: 1px dotted green;
+}
+.seleccionado {
+  color: #000;
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+  cursor: zoom-in;
+}
+.seleccionado:active {
+  scale: 1.2;
+  cursor: copy;
+}
